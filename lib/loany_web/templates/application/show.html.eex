@@ -1,0 +1,31 @@
+<h1>Show Application</h1>
+
+<div>
+  <p class="alert alert-info" role="alert">
+    Your loan application has been accepted with interest rate <strong><%= @application.interest %>%</strong>
+  </p>
+</div>
+
+<ul>
+
+  <li>
+    <strong>Names:</strong>
+    
+  </li>
+
+  <li>
+    <strong>Email:</strong>
+    <%= @application.email %>
+  </li>
+
+  <li>
+    <strong>Phone:</strong>
+    <%= @application.phone %>
+  </li>
+
+  <li>
+    <strong>Amount:</strong>
+    <%= @application.amount %>
+  </li>
+
+</ul>

@@ -1,0 +1,31 @@
+<h1>Loan Applications</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Names</th>
+      <th>Email</th>
+      <th>Phone</th>
+      <th>Amount</th>
+      <th>Status</th>
+
+      <th></th>
+    </tr>
+  </thead>
+  <tbody>
+<%= for application <- @applications do %>
+    <tr>
+      <td><%= application.names %></td>
+      <td><%= application.email %></td>
+      <td><%= application.phone %></td>
+      <td><%= application.amount %></td>
+      <td><%= application.status %></td>
+
+      <td>
+        <span><%= link "Show", to: Routes.application_path(@conn, :show, application) %></span>
+        <span><%= link "Delete", to: Routes.application_path(@conn, :delete, application), method: :delete, data: [confirm: "Are you sure?"] %></span>
+      </td>
+    </tr>
+<% end %>
+  </tbody>
+</table>

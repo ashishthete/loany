@@ -1,0 +1,10 @@
+<div>
+      <p class="alert alert-danger" role="alert">“Try again!”</p>
+</div>
+
+<script>
+    setTimeout(function(){
+        window.location.href = 'http://localhost:4000';
+    }, 3000);
+</script>
+<p>Web page redirects after 3 seconds.</p>
