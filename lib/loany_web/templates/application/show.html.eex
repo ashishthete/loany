@@ -10,7 +10,7 @@
 
   <li>
     <strong>Names:</strong>
-    
+    <%= Enum.join(@application.names, ", ") %>
   </li>
 
   <li>
