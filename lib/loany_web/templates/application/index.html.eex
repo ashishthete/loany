@@ -15,7 +15,7 @@
   <tbody>
 <%= for application <- @applications do %>
     <tr>
-      <td><%= application.names %></td>
+      <td><%= Enum.join(application.names, ", ") %></td>
       <td><%= application.email %></td>
       <td><%= application.phone %></td>
       <td><%= application.amount %></td>

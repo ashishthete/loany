@@ -17,3 +17,4 @@ clean:
 
 distclean:
 	$(RM) -R _build/
+	$(RM) -R assets/node_modules
